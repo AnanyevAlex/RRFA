@@ -24,11 +24,10 @@
   cursor: pointer;
   display: block;
   right: 19px;
-  top: 10px;
+  top: 16px;
   width: 20px;
   height: 20px;
   border: none;
-  transition: 3s;
   outline: none;
 
   &--none {
@@ -43,13 +42,13 @@
     top: 3px;
     left: 1px;
     background-color: #000000;
-    box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+    box-shadow: 0 6px 0 0 #000000, 0 -6px 0 0 #000000;
     transition: 0.2s 0.1s;
   }
 
     &:hover::before {
-    background-color: #0470ff;
-    box-shadow: 0 6px 0 0 #0470ff, 0 12px 0 0 #0470ff;
+    background-color: #004eb5;
+    box-shadow: 0 4px 0 0 #004eb5, 0 -4px 0 0 #004eb5;
   }
 }
 
@@ -94,6 +93,8 @@
 
   &:hover::before,
   &:hover::after {
+    width: 20px;
+    height: 3px;
     background-color: red;
   }
 }
@@ -107,10 +108,21 @@
   background-color: #e7e7e7;
   width: 100%;
 
+
   &--open {
     display: block;
+    opacity: 0;
+    width: 0%;
+    transition: .5s;
+    transition-timing-function: linear;
+  }
+
+  &--opacity {
+    opacity: 1;
+    width: 100%;
   }
 }
+
 /*
 @media (min-width: @tablet-width) {
   .main-nav {
