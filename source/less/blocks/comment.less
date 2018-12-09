@@ -1,0 +1,27 @@
+.comment {
+  box-sizing: border-box;
+  padding: 50px 0 10px 0;
+  min-height: 300px;
+}
+
+.comment__title {
+  display: block;
+  position: relative;
+  margin: 0 0 50px 0;
+  text-align: center;
+  width: 200px;
+  font-size: 22px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background-color: red;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
