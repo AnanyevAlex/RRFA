@@ -1,7 +1,7 @@
 var popup = document.querySelector(".main-nav__list");
 var btnOpen = document.querySelector(".main-nav__btn-open");
 var btnClose = document.querySelector(".main-nav__btn-close")
-var delayInSec = 500;
+var delayInSec = 400;
 
 btnOpen.addEventListener('click', function () {
   popup.classList.add("main-nav__list--open");

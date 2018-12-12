@@ -6,13 +6,12 @@
   text-align: center;
 }
 
-.footer-nav__item {
-  line-height: 1;
-  font-size: 20px;
+.footer-nav__link {
+  display: block;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
-  margin: 0 0 10px 0;
-  cursor: pointer;
-  height: 30px;
+  text-decoration: none;
 
   &:hover {
     color: rgba(255, 255, 255, 0.5);
@@ -21,10 +20,20 @@
   &:active {
     color: rgba(255, 255, 255, 0.15);
   }
+
+  &--actived,
+  &--actived:hover {
+    color: rgba(255, 255, 255, 0.15);
+    cursor: default;
+  }
 }
 
-.footer-nav__link {
-  display: block;
-  width: 100%;
-  height: 100%;
+.footer-nav__item {
+  line-height: 1;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  height: 30px;
 }
+
