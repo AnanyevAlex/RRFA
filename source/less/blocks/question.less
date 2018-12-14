@@ -13,7 +13,41 @@
 .question__item {
   width: 90%;
   margin: 0 auto 20px;
-  font-size: 15px;
-  border: 1px solid gray;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
 }
 
+.question__item-title {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 22px;
+  text-align: center;
+}
+
+.question__link-vk,
+.question__link-feedback,
+.question__link-rules {
+  text-decoration: none;
+  color: #ff6767;
+  cursor: pointer;
+  font-style: italic;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    text-shadow: 1px 0px 1px #000;
+  }
+
+  &:visited {
+    color: #ff6767;
+  }
+}
