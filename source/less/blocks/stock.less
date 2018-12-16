@@ -1,0 +1,88 @@
+.stock__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stock__item {
+  position: relative;
+}
+
+.stock__description {
+  display: block;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto 30px;
+}
+
+.stock__item-img {
+  width: 40%;
+  height: 120px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--friends {
+    background-image: url(../img/friends.jpg);
+  }
+
+  &--opt {
+    background-image: url(../img/opt.jpg);
+  }
+
+  &--repost {
+    background-image: url(../../img/repost.png);
+  }
+}
+
+.stock__item-name {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+
+.stock__item-description {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto 30px;
+  width: 80%;
+  z-index: 0;
+}
+
+.stock__item-btn {
+  display: block;
+  margin: 0 auto 20px;
+  width: 40%;
+  height: 35px;
+  border-radius: 10px 10px 10px 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.stock__conditions {
+  position: absolute;
+  transform-origin: 0% 0%;
+  transition: transform 0.3s;
+  width: 90%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  z-index: 5;
+  padding: 10px 10px 10px 30px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #ffffff;
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+
+  &--hidden {
+    transform: rotateX(90deg);
+  }
+}
