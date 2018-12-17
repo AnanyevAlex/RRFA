@@ -30,7 +30,7 @@
         <section class="page-header__intro intro intro--second-page">
           <div class="intro__color-block intro__color-block--second-page">
             <h1 class="intro__title">Решу РФ</h1>
-            <a class="intro__btn-order">Заказать работу</a>
+            <a class="intro__btn-order btn-order">Заказать работу</a>
           </div>
         </section>
       </header>
@@ -152,7 +152,115 @@
             <img src="img/logo-footer.png" alt="Лого решу" class="footer__logo-img">
         </a>
       </footer>
+      <div class="modal-order__block">
+        <section class="modal-order">
+          <button class="modal-order__btn-close">
+            <span class="visually-hidden">кнопка закрыть</span>
+          </button>
+          <form class="modal-order__form order-form" action="#" method="post">
+            <fieldset class="order-form__fieldset">
+              <input type="text" name="work-name" placeholder="Ведите название работы" required>
+              <select type="text" name="work-type" required>
+                <option>Тип работы</option>
+                <option>Дипломная</option>
+                <option>Курсовая</option>
+                <option>Контрольня</option>
+                <option>Задачи</option>
+                <option>Реферат</option>
+                <option>Доклад</option>
+                <option>Тест</option>
+                <option>Статья</option>
+                <option>Онлайн помощь</option>
+                <option>Перевод</option>
+                <option>Практика</option>
+                <option>Чертеж</option>
+                <option>Сочинение</option>
+                <option>Эссе</option>
+                <option>Презентация</option>
+              </select>
+              <select type="text" name="work-section" required>
+                <option>Раздел</option>
+                <option>Математические дисциплины</option>
+                <option>Естественные дисциплины</option>
+                <option>Технические дисциплины</option>
+                <option>ИТ Дисциплины</option>
+                <option>Гуманитарные Дисциплины</option>
+                <option>Экономические дисциплины</option>
+                <option>Правовые дисциплины</option>
+                <option>Иностранные языки</option>
+                <option>Работа с текстом</option>
+              </select>
+              <select type="text" name="work-section" required>
+                <option>Выбрать предмет</option>
+              </select>
+              <br>
+              <label>Дата сдачи
+                <select type="text" name="work-date">
+                  <option>ДД</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select type="text" name="work-month">
+                  <option>ММ</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset class="order-form__fieldset">
+              <label>Ваше имя:</label>
+              <input type="text" name="first-name">
+              <label>Ваше отчество:</label>
+              <input type="text" name="middle-name">
+              <label>Ссылка на ВК:</label>
+              <input type="text" name="vk">
+              <label>Ваш e-mail:</label>
+              <input type="email" name="email">
+            </fieldset>
+            <textarea name="work-add" rows="5" placeholder="Дополнительная информация"></textarea>
+            <fieldset class="order-form__fieldset">
+              <label>Проверка на плагиат<input type="checkbox" name="uniqueness"></label>
+              <select name="uniqueness-percent">
+                <option>40%</option>
+                <option>50%</option>
+                <option selected>60%</option>
+                <option>65%</option>
+                <option>70%</option>
+                <option>75%</option>
+                <option>80%</option>
+                <option>85%</option>
+                <option>90%</option>
+                <option>95%</option>
+                <option>100%</option>
+              </select>
+              <br>
+              <label>АПру<input type="radio" name="uniqueness-system" checked disabled></label>
+              <label>АП Вуз<input type="radio" name="uniqueness-system" disabled=""></label>
+            </fieldset>
+            <input type="file" name="file-add">
+            <input type="submit" name="send-form">
+          </form>
+        </section>
+      </div>
     </div>
+    <script src="js/modal.min.js"></script>
     <script src="js/menu.min.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>
