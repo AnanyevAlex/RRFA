@@ -199,6 +199,46 @@
             <img src="img/logo-footer.png" alt="Лого решу" class="footer__logo-img">
         </a>
       </footer>
+      <div class="modal-order__close-block">
+        <section class="modal-order">
+          <button class="modal-order__btn-close">
+            <span class="visually-hidden">кнопка закрыть</span>
+          </button>
+          <form class="modal-order order-form" action="#" method="post">
+            <fieldset class="order-form__fieldset">
+              <input type="text" name="work-name" placeholder="Ведите название работы" required>
+              <select type="text" name="work-type" required placeholder="Тип работы">
+                <option>Дипломная</option>
+                <option>Курсовая</option>
+                <option>Контрольня</option>
+                <option>Задачи</option>
+                <option>Реферат</option>
+                <option>Доклад</option>
+                <option>Тест</option>
+                <option>Статья</option>
+                <option>Онлайн помощь</option>
+                <option>Перевод</option>
+                <option>Практика</option>
+                <option>Чертеж</option>
+                <option>Сочинение</option>
+                <option>Эссе</option>
+                <option>Презентация</option>
+              </select>
+
+            </fieldset>
+            <fieldset class="order-form__fieldset">
+              <label>Ваше имя:</label>
+              <input type="text" name="first-name">
+              <label>Ваше отчество:</label>
+              <input type="text" name="middle-name">
+              <label>Ссылка на ВК:</label>
+              <input type="text" name="vk">
+              <label>Ваш e-mail:</label>
+              <input type="email" name="email">
+            </fieldset>
+          </form>
+        </section>
+      </div>
     </div>
     <script src="js/menu.min.js"></script>
     <script src="js/picturefill.min.js"></script>
