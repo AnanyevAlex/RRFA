@@ -4,10 +4,16 @@
 }
 
 .order-form__fieldset {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   border: none;
   border-bottom: 1px solid #aeaeae;
+
+  &--antiplagiat {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .order-form__input {
@@ -44,11 +50,32 @@
   }
 }
 
+.order-form__label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.order-form__date-title {
+  margin: 0;
+  text-align: center;
+}
+
+.order-form__date-flex {
+  display: flex;
+}
+
 .order-form__block-img {
   position: relative;
   margin: 0 auto;
   width: 100%;
   outline: 1px solid green;
+
+  &--mini {
+    margin: 0 40px 0 4%;
+    width: 15%;
+    height: 25px;
+    justify-content: space-between;
+  }
 }
 
 .order-form__btn-submit {

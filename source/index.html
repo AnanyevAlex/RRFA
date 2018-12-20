@@ -248,10 +248,10 @@
                 </select>
               </div>
               <br>
-              <h3>Выберете дату сдачи</h3>
+              <h3 class="order-form__date-title">Выберете дату сдачи</h3>
               <div class="order-form__date-flex">
-                <label>Число</label>
-                <div class="order-form__block-img order-form__block-img--date">
+                <label class="order-form__label">Число</label>
+                <div class="order-form__block-img order-form__block-img--mini">
                   <select class="order-form__input order-form__input--select" type="text" name="work-date">
                     <option>ДД</option>
                     <option>2</option>
@@ -266,8 +266,8 @@
                     <option>12</option>
                   </select>
                 </div>
-                <label for="">Месяц</label>
-                <div class="order-form__block-img order-form__block-img--date">
+                <label class="order-form__label" for="">Месяц</label>
+                <div class="order-form__block-img order-form__block-img--mini">
                   <select class="order-form__input order-form__input--select" type="text" name="work-month">
                     <option>ММ</option>
                     <option>1</option>
@@ -286,32 +286,34 @@
               </div>
             </fieldset>
             <fieldset class="order-form__fieldset">
-              <label>Ваше фио:</label>
+              <label class="order-form__label">Ваше фио:</label>
               <input class="order-form__input" type="text" name="name">
-              <label>Ссылка на ВК:</label>
+              <label class="order-form__label">Ссылка на ВК:</label>
               <input class="order-form__input" type="text" name="vk">
-              <label>Ваш e-mail:</label>
+              <label class="order-form__label">Ваш e-mail:</label>
               <input class="order-form__input" type="email" name="email">
             </fieldset>
             <textarea class="order-form__input order-form__input--textarea" name="work-add" placeholder="Дополнительная информация" ></textarea>
-            <fieldset class="order-form__fieldset">
-              <label>Проверка на плагиат<input type="checkbox" name="uniqueness"></label>
-              <select class="order-form__input order-form__input--select" name="uniqueness-percent">
-                <option>40%</option>
-                <option>50%</option>
-                <option selected>60%</option>
-                <option>65%</option>
-                <option>70%</option>
-                <option>75%</option>
-                <option>80%</option>
-                <option>85%</option>
-                <option>90%</option>
-                <option>95%</option>
-                <option>100%</option>
-              </select>
+            <fieldset class="order-form__fieldset order-form__fieldset--antiplagiat">
+              <label class="order-form__label">Проверка на плагиат<input type="checkbox" name="uniqueness"></label>
+              <div class="order-form__block-img order-form__block-img--mini">
+                <select class="order-form__input order-form__input--select" name="uniqueness-percent">
+                  <option>40%</option>
+                  <option>50%</option>
+                  <option selected>60%</option>
+                  <option>65%</option>
+                  <option>70%</option>
+                  <option>75%</option>
+                  <option>80%</option>
+                  <option>85%</option>
+                  <option>90%</option>
+                  <option>95%</option>
+                  <option>100%</option>
+                </select>
+              </div>
               <br>
-              <label>АПру<input class="order-form__input" type="radio" name="uniqueness-system" checked disabled></label>
-              <label>АП Вуз<input class="order-form__input" type="radio" name="uniqueness-system" disabled=""></label>
+              <label class="order-form__label">АПру<input class="order-form__input" type="radio" name="uniqueness-system" checked disabled></label>
+              <label class="order-form__label">АП Вуз<input class="order-form__input" type="radio" name="uniqueness-system" disabled=""></label>
             </fieldset>
             <input class="order-form__input" type="file" name="file-add">
             <input class="order-form__btn-submit" type="submit" name="send-form">
