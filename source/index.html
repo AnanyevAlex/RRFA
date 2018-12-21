@@ -294,28 +294,38 @@
               <input class="order-form__input" type="email" name="email">
             </fieldset>
             <textarea class="order-form__input order-form__input--textarea" name="work-add" placeholder="Дополнительная информация" ></textarea>
-            <fieldset class="order-form__fieldset order-form__fieldset--antiplagiat">
-              <label class="order-form__label">Проверка на плагиат<input type="checkbox" name="uniqueness"></label>
-              <div class="order-form__block-img order-form__block-img--mini">
-                <select class="order-form__input order-form__input--select" name="uniqueness-percent">
-                  <option>40%</option>
-                  <option>50%</option>
-                  <option selected>60%</option>
-                  <option>65%</option>
-                  <option>70%</option>
-                  <option>75%</option>
-                  <option>80%</option>
-                  <option>85%</option>
-                  <option>90%</option>
-                  <option>95%</option>
-                  <option>100%</option>
-                </select>
+            <fieldset class="order-form__fieldset">
+              <div class="order-formd__antiplagiat-flex">
+                <label class="order-form__label order-form__label--check-uniqueness">Проверка на плагиат<input class="visually-hidden" type="checkbox" name="uniqueness"></label>
+                <div class="order-form__block-img order-form__block-img--mini">
+                  <select class="order-form__input order-form__input--select" name="uniqueness-percent">
+                    <option>40%</option>
+                    <option>50%</option>
+                    <option selected>60%</option>
+                    <option>65%</option>
+                    <option>70%</option>
+                    <option>75%</option>
+                    <option>80%</option>
+                    <option>85%</option>
+                    <option>90%</option>
+                    <option>95%</option>
+                    <option>100%</option>
+                  </select>
+                </div>
               </div>
               <br>
-              <label class="order-form__label">АПру<input class="order-form__input" type="radio" name="uniqueness-system" checked disabled></label>
-              <label class="order-form__label">АП Вуз<input class="order-form__input" type="radio" name="uniqueness-system" disabled=""></label>
+              <div class="order-formd__antiplagiat-flex">
+                <input class="order-form__input order-form__input--uniqueness visually-hidden" type="radio" name="uniqueness-system" checked id="uniqueness-ru">
+                <label class="order-form__label order-form__label--uniqueness-ru" for="uniqueness-ru">Антиплагиат ру</label>
+
+                <label class="order-form__label order-form__label--uniqueness-hard" for="uniqueness-hard">Аантиплагиат Вуз</label>
+                <input class="order-form__input order-form__input--uniqueness visually-hidden" type="radio" name="uniqueness-system" id="uniqueness-hard" >
+
+             </div>
+             <input class="order-form__input order-form__input--ap" type="text" name="ap-login" placeholder="Логин от Антиплагиат Вуз">
+             <input class="order-form__input order-form__input--ap" type="text" name="ap-password" placeholder="Пароль от антиплагиат Вуз">
             </fieldset>
-            <input class="order-form__input" type="file" name="file-add">
+            <input class="order-form__add-file" type="file" name="file-add">
             <input class="order-form__btn-submit" type="submit" name="send-form">
           </form>
         </section>
