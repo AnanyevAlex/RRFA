@@ -199,20 +199,20 @@
             <img src="img/logo-footer.png" alt="Лого решу" class="footer__logo-img">
         </a>
       </footer>
-      <div class="modal-order__block modal-order__block--show">
-        <section class="modal-order modal-order--show">
+      <div class="modal-order__block">
+        <section class="modal-order">
           <button class="modal-order__btn-close">
             <span class="visually-hidden">кнопка закрыть</span>
           </button>
           <h2 class="modal-order__title">Форма заказа</h2>
-          <form class="modal-order__order-form order-form" action="#" method="post">
+          <form class="modal-order__order-form order-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="order-form__fieldset">
               <input class="order-form__input" type="text" name="work-name" placeholder="Ведите название работы" required maxlength="35" maxlength="35" minlength="5">
               <div class="order-form__block-img">
                 <select class="order-form__input order-form__input--select" type="text" name="work-type" required>
                   <option class="order-form__input--selected">Тип работы</option>
-                  <option class="order-form__input--selected">Дипломная</option>
-                  <option class="order-form__input--selected">Курсовая</option>
+                  <option>Дипломная</option>
+                  <option>Курсовая</option>
                   <option>Контрольня</option>
                   <option>Задачи</option>
                   <option>Реферат</option>
@@ -227,10 +227,13 @@
                   <option>Эссе</option>
                   <option>Презентация</option>
                 </select>
+                <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
               </div>
               <div class="order-form__block-img">
-                <select class="order-form__input order-form__input--select" type="text" name="work-section" required>
-                  <option>Раздел</option>
+                <select class="order-form__input order-form__input--select" type="text" name="work-direction" required>
+                  <option class="order-form__input--selected">Раздел</option>
                   <option>Математические дисциплины</option>
                   <option>Естественные дисциплины</option>
                   <option>Технические дисциплины</option>
@@ -241,18 +244,24 @@
                   <option>Иностранные языки</option>
                   <option>Работа с текстом</option>
                 </select>
+                <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
               </div>
               <div class="order-form__block-img">
-                <select class="order-form__input order-form__input--select" type="text" name="work-section" required>
+                <select class="order-form__input order-form__input--select" type="text" name="work-discipline" required>
                   <option>Выбрать предмет</option>
                 </select>
+                <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
               </div>
               <br>
               <h3 class="order-form__date-title">Выберете дату сдачи</h3>
               <div class="order-form__date-flex">
                 <label class="order-form__label">Число</label>
                 <div class="order-form__block-img order-form__block-img--mini">
-                  <select class="order-form__input order-form__input--select" type="text" name="work-date">
+                  <select class="order-form__input order-form__input--select" type="text" name="work-day">
                     <option>ДД</option>
                     <option>2</option>
                     <option>3</option>
@@ -265,6 +274,9 @@
                     <option>11</option>
                     <option>12</option>
                   </select>
+                  <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </div>
                 <label class="order-form__label" for="">Месяц</label>
                 <div class="order-form__block-img order-form__block-img--mini">
@@ -282,23 +294,27 @@
                     <option>11</option>
                     <option>12</option>
                   </select>
+                  <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </div>
               </div>
             </fieldset>
             <fieldset class="order-form__fieldset">
               <label class="order-form__label">Ваше фио:</label>
-              <input class="order-form__input" type="text" name="name">
+              <input class="order-form__input" type="text" name="name" required>
               <label class="order-form__label">Ссылка на ВК:</label>
-              <input class="order-form__input" type="text" name="vk">
+              <input class="order-form__input" type="text" name="vk" required>
               <label class="order-form__label">Ваш e-mail:</label>
-              <input class="order-form__input" type="email" name="email">
+              <input class="order-form__input" type="email" name="email" required>
             </fieldset>
             <textarea class="order-form__input order-form__input--textarea" name="work-add" placeholder="Дополнительная информация" ></textarea>
             <fieldset class="order-form__fieldset">
               <div class="order-formd__antiplagiat-flex">
-                <label class="order-form__label order-form__label--check-uniqueness">Проверка на плагиат<input class="visually-hidden" type="checkbox" name="uniqueness"></label>
+                <input class="visually-hidden order-form__input--uniqueness" type="checkbox" name="uniqueness" id="uniqueness">
+                <label class="order-form__label order-form__label--check-uniqueness" for="uniqueness">Проверка уникальности антиплагиат.ру</label>
                 <div class="order-form__block-img order-form__block-img--mini">
-                  <select class="order-form__input order-form__input--select" name="uniqueness-percent">
+                  <select class="order-form__input order-form__input--select" name="uniqueness-percent" disabled>
                     <option>40%</option>
                     <option>50%</option>
                     <option selected>60%</option>
@@ -311,21 +327,25 @@
                     <option>95%</option>
                     <option>100%</option>
                   </select>
+                  <svg class="order-form__select-img" width="20" height="20">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </div>
               </div>
               <br>
-              <div class="order-formd__antiplagiat-flex">
-                <input class="order-form__input order-form__input--uniqueness visually-hidden" type="radio" name="uniqueness-system" checked id="uniqueness-ru">
-                <label class="order-form__label order-form__label--uniqueness-ru" for="uniqueness-ru">Антиплагиат ру</label>
-
-                <label class="order-form__label order-form__label--uniqueness-hard" for="uniqueness-hard">Аантиплагиат Вуз</label>
-                <input class="order-form__input order-form__input--uniqueness visually-hidden" type="radio" name="uniqueness-system" id="uniqueness-hard" >
-
+              <div class="order-form__antiplagiat-flex">
+                <input class="order-form__input order-form__input--uniqueness-special visually-hidden" type="checkbox" name="uniqueness-system" id="uniqueness-ru">
+                <label class="order-form__label order-form__label--uniqueness-special" for="uniqueness-ru">Нужна проверка по антиплагиат ВУЗ</label>
              </div>
              <input class="order-form__input order-form__input--ap" type="text" name="ap-login" placeholder="Логин от Антиплагиат Вуз">
              <input class="order-form__input order-form__input--ap" type="text" name="ap-password" placeholder="Пароль от антиплагиат Вуз">
             </fieldset>
-            <input class="order-form__add-file" type="file" name="file-add">
+            <div class="order-form__file-block">
+              <label class="order-form__label order-form__label--upload">
+                Выберите файл
+                <input class="order-form__add-file" type="file" name="file-add">
+              </label>
+            </div>
             <input class="order-form__btn-submit" type="submit" name="send-form">
           </form>
         </section>
