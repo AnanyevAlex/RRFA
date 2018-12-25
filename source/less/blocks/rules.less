@@ -2,6 +2,7 @@
   padding: 10px 0 0 0;
   box-sizing: border-box;
   background-color: #e0e0e04d;
+  text-align: center;
 }
 
 .rules__item {
@@ -27,4 +28,82 @@
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+}
+
+@media (min-width: @tablet-width) {
+  .rules {
+    padding: 40px 0 0 0;
+
+     :nth-child(6) {
+    margin: 0;
+  }
+  }
+
+  .rules__bg-box {
+    position: relative;
+    width: 100%;
+    min-height: 440px;
+    margin: 25px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: left;
+    background:linear-gradient(#c1c1c1, transparent 1px),
+    linear-gradient(90deg,#c1c1c1, transparent 1px);
+    background-size: 10px 10px;
+    background-position: center center;
+    transition: .3s all ease;
+    box-shadow: 0 8px 10px -2px rgba(0,0,0,.15);
+    background-color: #f6f9f0;
+  }
+
+  .rules__item {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: none;
+    background: none;
+    background: transparent;
+  }
+}
+
+.rules__btn-slide {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 5% 0 0;
+  cursor: pointer;
+  position: relative;
+  background: #ECECEC;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color:#7f7f7f;
+  text-shadow:0px 1px 0px #fff;
+  border:1px solid #a7a7a7;
+  box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+
+
+
+  &:hover {
+    color: #000000;
+    box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+}
+
+.rules__input-slide {
+  display: none;
+}
+
+.rules__input-slide:checked + .rules__btn-slide {
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+}
+
+.rules__input-slide--all-rules:checked ~ .rules__bg-box .rules__item--basic,
+.rules__input-slide--online:checked ~ .rules__bg-box .rules__item--online,
+.rules__input-slide--coursework:checked ~ .rules__bg-box .rules__item--coursework {
+  display: block;
 }
