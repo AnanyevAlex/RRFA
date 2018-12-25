@@ -11,7 +11,6 @@
       <include src="build/img/sprite.svg"></include>
     </div>
     <div class="container">
-    <div class="container">
       <header class="page-header">
         <nav class="page-header__main-nav main-nav">
           <a href="index.html" class="main-nav__logo-header">
@@ -20,126 +19,23 @@
           <button class="main-nav__btn main-nav__btn-open"  type="button"><span class="visually-hidden">Открыть меню</span></button>
           <button class="main-nav__btn main-nav__btn-close main-nav__btn-close main-nav__btn-close--none"  type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <ul class="main-nav__list site-list-header">
-            <li class="site-list-header__item"><a href="index.html" class="site-list-header__link">Главная</a></li>
-            <li class="site-list-header__item"><a href="rules.html" class="site-list-header__link">Правила работы</a></li>
-            <li class="site-list-header__item  site-list-header__item--actived"><a class="site-list-header__link">Акции</a></li>
+            <li class="site-list-header__item"><a class="site-list-header__link">Главная</a></li>
+            <li class="site-list-header__item site-list-header__item--active"><a href="rules.html" class="site-list-header__link">Правила работы</a></li>
+            <li class="site-list-header__item"><a href="stock.html" class="site-list-header__link">Акции</a></li>
             <li class="site-list-header__item"><a href="question.html" class="site-list-header__link">Вопрос - ответ</a></li>
           </ul>
           <a class="main-nav__phone no-mobile" href="tel: +79221113035">+7 906 899 92 96</a>
         </nav>
-        <section class="page-header__intro intro intro--second-page">
-          <div class="intro__color-block intro__color-block--second-page">
+        <section class="page-header__intro intro">
+          <div class="intro__color-block">
             <h1 class="intro__title intro__title--second-page">Решу РФ</h1>
-            <a class="intro__btn-order btn-order">Заказать работу</a>
+            <p class="intro__text">Помогаем студентам в учебе!</p>
           </div>
         </section>
       </header>
-      <main class="page-second">
-        <section class="page-second__stock stock">
-          <h2 class="stock__title">Акции</h2>
-          <p class="stock__description">Наши акции постоянно меняются, периодически добавляются новые (как временные так и постоянные), следите за обновлениями! Так же если у вас есть идея крутой акцией - мы с удовольствием выслушаем Ваше предложение!</p>
-          <div class="stock__item">
-            <div class="stock__item-img stock__item-img--friends">
-            </div>
-            <div class="stock__item-text">
-              <h3 class="stock__item-name">Приведи друга, получи деньги!</h3>
-              <p class="stock__item-description">Все просто! Если по вашей рекоммендации пришел ваш друг (или просто знакомый), который ранее не заказывал у нас - вы получите 10% от стоимости его первого заказа деньгами,    а он сам 5% скидку на первый заказ! При соблюдении всех условий акции.
-              </p>
-            </div>
-            <div class="stock__details">
-              <button type="button" class="stock__item-btn stock__item-btn--friends" name="button-conditions">Условия:</button>
-              <ol class="stock__conditions stock__conditions--hidden stock__conditions--friend">
-                <li>Приглашенный ранее не заказывал у нас</li>
-                <li>Приглашенный при обращении четко дал понять, что он от Вас (назвал фио/дал на вас ссылку)</li>
-                <li>Приглашенному выполнили и он сдал работу</li>
-                <li>У Вас открыты ЛС сообщения вконтакте и мы можем Вам написать</li>
-                <li>Акции не суммируются</li>
-              </ol>
-            </div>
-          </div>
-          <div class="stock__item">
-            <div class="stock__item-img stock__item-img--opt">
-            </div>
-            <div class="stock__item-text">
-              <h3 class="stock__item-name">Оптом дешевле!</h3>
-              <p class="stock__item-description">
-                Накопилось работ? Или просто задали много ДЗ? Мы все решим, еще и сделаем скидку!<br> При заказе нескольких работ Вы можете получить скидку на каждую из них! А если работ у Вас много - мы увеличим сумму скидки для вас!
-              </p>
-            </div>
-            <div class="stock__details">
-              <button type="button" class="stock__item-btn stock__item-btn--opt" name="button-conditions">Условия:</button>
-              <ol class="stock__conditions stock__conditions--hidden stock__conditions--opt">
-                <li>Скидка предоставляется при одновременном заказе нескольких работ</li>
-                <li>При заказе 2х курсовых, либо 3х обычных работ (более  дешевых) - скидка 5%</li>
-                <li>При заказе от 5 работ сразу - 10% скидка</li>
-                <li>Если у вас больше 5 работ или сумма работ свыше 7000р - готовы обсудить индивидуальную скидку (не относится к дипломным работам)</li>
-                <li>Акции не суммируются</li>
-              </ol>
-            </div>
-          </div>
-          <div class="stock__item">
-            <div class="stock__item-img stock__item-img--repost">
-            </div>
-            <div class="stock__item-text">
-              <h3 class="stock__item-name">Скидка за репост</h3>
-              <p class="stock__item-description">
-                Пожалуй самая простая акция! Вы делаете репост закрепленной записи из нашей группы получаете скидку в 3% на 1 свою работу! Подробнее об этой акции читайте в условиях!
-              </p>
-            </div>
-            <div class="stock-details">
-              <button type="button" class="stock__item-btn stock__item-btn--repost" name="button-conditions">Условия:</button>
-              <ol class="stock__conditions stock__conditions--hidden stock__conditions--open stock__conditions--repost">
-                <li>Скидка предоставляется только на 1 работу</li>
-                <li>Если вы хотите заказать несколько работ - вы можете сами выбрать на какую будет действовать скидка</li>
-                <li>Для получения скидки репост должен висет у вас в первых 3х записях на стене</li>
-                <li>Для получения скидки репост должен висеть на стене минимум 5 дней (эти 5 дней считают и во время выполнения работы)</li>
-                <li>Акции не суммируются</li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section class="page-second__order order">
-            <a class="order__online-order">Заказ онлайн</a>
-            <a href="https://vk.com/im?peers=307177093_275196133_52544000&sel=277939714" class="order__whrite-us" target="_blank">Напишите нам</a>
-        </section>
-      </main>
-      <footer class="page-footer footer">
-        <div class="footer__social-block social-block">
-          <a href="https://vk.com/reshu_rf" target="_blank">
-            <span class="visually-hidden">В контакте</span>
-            <svg class="social-block__item" width="45" height="45">
-                <use xlink:href="#vk"></use>
-            </svg>
-          </a>
-          <a href="tel: +79221113035">
-            <span class="visually-hidden">Позвонить нам</span>
-            <svg class="social-block__item" width="45" height="45">
-                <use xlink:href="#phone"></use>
-            </svg>
-          </a>
-          <a href="">
-            <span class="visually-hidden">Инстаграмм</span>
-            <svg class="social-block__item" width="45" height="45">
-                <use xlink:href="#insta"></use>
-            </svg>
-          </a>
-        </div>
-        <ul class="footer__footer-nav footer-nav">
-          <li class="footer-nav__item"><a href="index.html" class="footer-nav__link">Главная</a></li>
-          <li class="footer-nav__item"><a href="rules.html" class="footer-nav__link">Правила работы</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link footer-nav__link--actived">Акции</a></li>
-          <li class="footer-nav__item"><a href="question.html" class="footer-nav__link">Вопрос-ответ</a></li>
-        </ul>
-        <a class="footer__logo-footer" href="index.html">
-            <img src="img/logo-footer.png" alt="Лого решу" class="footer__logo-img">
-        </a>
-      </footer>
-      <div class="modal-order__block">
-        <section class="modal-order">
-          <button class="modal-order__btn-close">
-            <span class="visually-hidden">кнопка закрыть</span>
-          </button>
-          <h2 class="modal-order__title">Форма заказа</h2>
+      <main class="page-main">
+        <section class="modal-order modal-order--second-page">
+          <h2 class="modal-order__title modal-order__title--second-page">Форма заказа</h2>
           <form class="modal-order__order-form order-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="order-form__fieldset">
               <input class="order-form__input" type="text" name="work-name" placeholder="Ведите название работы" required maxlength="35" maxlength="35" minlength="5">
@@ -284,10 +180,39 @@
             <input class="order-form__btn-submit" type="submit" name="send-form">
           </form>
         </section>
-      </div>
-    </div>
+      </main>
+      <footer class="page-footer footer">
+        <div class="footer__social-block social-block">
+          <a href="https://vk.com/reshu_rf" target="_blank">
+            <span class="visually-hidden">В контакте</span>
+            <svg class="social-block__item" width="45" height="45">
+                <use xlink:href="#vk"></use>
+            </svg>
+          </a>
+          <a href="tel: +79221113035">
+            <span class="visually-hidden">Позвонить нам</span>
+            <svg class="social-block__item" width="45" height="45">
+                <use xlink:href="#phone"></use>
+            </svg>
+          </a>
+          <a href="">
+            <span class="visually-hidden">Инстаграмм</span>
+            <svg class="social-block__item" width="45" height="45">
+                <use xlink:href="#insta"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="footer__footer-nav footer-nav">
+          <li class="footer-nav__item"><a class="footer-nav__link">Главная</a></li>
+          <li class="footer-nav__item"><a href="rules.html" class="footer-nav__link">Правила работы</a></li>
+          <li class="footer-nav__item"><a href="stock.html" class="footer-nav__link">Акции</a></li>
+          <li class="footer-nav__item"><a href="question.html" class="footer-nav__link">Вопрос-ответ</a></li>
+        </ul>
+        <a class="footer__logo-footer">
+            <img src="img/logo-footer.png" alt="Лого решу" class="footer__logo-img">
+        </a>
+      </footer>
     <script src="js/modal.min.js"></script>
-    <script src="js/conditions.min.js"></script>
     <script src="js/menu.min.js"></script>
     <script src="js/picturefill.min.js"></script>
   </body>

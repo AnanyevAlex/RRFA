@@ -13,7 +13,7 @@
   &::before {
     content: "";
     position: absolute;
-    width: 60px;
+    width: 12%;
     height: 3px;
     background-color: red;
     top: -10px;
@@ -94,5 +94,37 @@
 
   &:visited {
     color: #ff6767;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .why-we__title {
+    margin: 0 0 50px 0;
+    font-size: 30px;
+  }
+
+  .why-we__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-around;
+  }
+
+  .why-we__item {
+    width: 45%;
+    margin: 0 0 60px 0;
+  }
+
+  .why-we__item-title {
+    font-size: 27px;
+
+    &::before {
+      left: -50px;
+      font-size: 40px;
+    }
+  }
+
+  .why-we__item-text {
+    font-size: 18px;
   }
 }

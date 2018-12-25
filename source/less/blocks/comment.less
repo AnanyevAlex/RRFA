@@ -89,3 +89,32 @@
   margin: 0 0 10px 0;
   color: #999999;
 }
+
+@media (min-width: @tablet-width) {
+  .comment__title {
+    font-size: 30px;
+  }
+
+  .comment__description {
+    font-size: 18px;
+  }
+
+  .comment__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .comment__item-block {
+    width: 45%;
+  }
+
+  .comment__item-data,
+  .comment__item-name {
+    font-size: 18px;
+  }
+
+  .comment__item-text {
+    font-size: 20px;
+  }
+}

@@ -48,7 +48,7 @@
   padding: 10px 0 0 0;
   box-sizing: border-box;
   text-align: center;
-  width: 200px;
+  width: 37%;
   height: 40px;
   border-radius: 20px 20px 20px 20px;
   font-size: 16px;
@@ -64,4 +64,38 @@
     background-color: rgba(255, 255, 255, 0.8);
     color: #000000;
   }
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    height: 350px;
+
+    &--second-page {
+      height: 270px;
+    }
+  }
+
+  .intro__color-block {
+    padding: 40px 0 0 0;
+  }
+
+  .intro__title {
+    font-size: 70px;
+    margin: 0 0 30px 0;
+
+    &--second-page {
+      margin: 0 0 50px 0;
+    }
+  }
+
+  .intro__text {
+    font-size: 30px;
+  }
+
+  .intro__btn-order {
+    height: 50px;
+    font-size: 20px;
+    padding: 12px 0 0;
+  }
+
 }
