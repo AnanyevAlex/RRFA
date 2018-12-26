@@ -24,8 +24,13 @@
   list-style: none;
 
   &--select {
+    -ms-appearance: none;
     appearance: none;
     width: 100%;
+
+    &::-ms-expand {
+      display: none;
+    }
   }
 
   &--textarea {
@@ -275,6 +280,8 @@
     &--textarea {
       height: 80px;
     }
+
+
   }
 
   .order-form__flex-tablet {
