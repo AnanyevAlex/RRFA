@@ -26,7 +26,7 @@
 .why-we__item {
   box-sizing: border-box;
   width: 95%;
-  padding: 0 2.5% 10px 10%;
+  padding: 0 2.5% 10px 11%;
   margin: 0 auto 20px;
   min-height: 100px;
   box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, .4);
@@ -48,7 +48,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -40px;
+    left: -12%;
     width: 35px;
     height: 30px;
     font-family: "ptsans","arial",sans-serif;
@@ -113,18 +113,44 @@
   .why-we__item {
     width: 45%;
     margin: 0 0 60px 0;
+    padding: 0 2.5% 10px 10%;
   }
 
   .why-we__item-title {
     font-size: 27px;
 
     &::before {
-      left: -50px;
+      left: -20%;
       font-size: 40px;
     }
   }
 
   .why-we__item-text {
     font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .why-we__title {
+    margin: 0 0 65px;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .why-we__item {
+    width: 40%;
+  }
+
+  .why-we__item-title {
+    font-size: 30px;
+  }
+
+  .why-we__item-svg {
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

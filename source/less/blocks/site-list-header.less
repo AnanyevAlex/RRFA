@@ -65,3 +65,44 @@
     letter-spacing: 2px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list-header__item {
+    background: none;
+    border: none;
+    color: #000000;
+    box-shadow: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+
+    &:hover,
+    &:active {
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  .site-list-header__link {
+    color: #000000;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      color: #ffffff;
+      text-shadow: 3px 1px 1px #000000;
+    }
+
+    &--actived,
+    &--actived:hover,
+    &--actived:active {
+      color: #b3b3b3;
+      text-shadow: 1px 1px 1px #afafaf;
+    }
+
+
+  }
+}

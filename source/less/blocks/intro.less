@@ -7,7 +7,7 @@
 
   &--second-page {
     height: 190px;
-    background-position: 0 -45px;
+    background-position: 0 -25px;
   }
 }
 
@@ -48,7 +48,7 @@
   padding: 10px 0 0 0;
   box-sizing: border-box;
   text-align: center;
-  width: 37%;
+  width: 40%;
   height: 40px;
   border-radius: 20px 20px 20px 20px;
   font-size: 16px;
@@ -57,7 +57,7 @@
   border: 1px solid #ffffff;
   cursor: pointer;
   outline: none;
-  transition: 1s;
+  transition: 0.6s;
 
   &:hover {
     border: 1px solid rgba(0,0,0,.7);
@@ -97,5 +97,44 @@
     font-size: 20px;
     padding: 12px 0 0;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .intro {
+    height: 550px;
+    background-image: url(../../img/intro1200.jpg);
+    background-position: 0 -80px;
+
+    &--second-page {
+      height: 270px;
+    }
+  }
+
+  .intro__title {
+    font-size: 90px;
+    margin: 0 0 65px;
+    letter-spacing: 10px;
+  }
+
+  .intro__text {
+    font-size: 45px;
+    margin: 0 0 140px;
+  }
+
+  .intro__btn-order {
+    height: 75px;
+    font-size: 30px;
+    width: 25%;
+    padding: 20px 0 0;
+
+    &:active {
+      transition: 0.3s;
+      box-shadow: 1px 1px 14px rgb(255, 194, 194);
+text-shadow: 0px 0px 10px rgba(31, 129, 31, 0.7);
+    }
+  }
+
+  .intro__color-block {
+    padding: 75px 0 0;
+  }
 }

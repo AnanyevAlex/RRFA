@@ -192,34 +192,47 @@
       width: 25px;
     }
   }
-
 }
-/**
+
 @media (min-width: @desktop-width) {
   .main-nav {
-    justify-content: flex-start;
-    background-color: #fbebea;
-    padding: 58px 27px 0 26px;
-    height: 100px;
+    justify-content: space-between;
+    padding: 20px 27px 0 26px;
+    height: 80px;
   }
 
   .main-nav__logo-header {
-    font-size: 24px;
+    height: 53px;
+    width: 220px;
   }
 
-  .main-nav__btn {
+  .main-nav__logo-img {
+    width: 220px;
+    height: auto;
+  }
+
+  .main-nav__btn-open {
     display: none;
   }
 
   .main-nav__list {
     display: flex;
     position: static;
+    justify-content: space-around;
     background-color: transparent;
     border: none;
+    width: 700px;
   }
 
   .main-nav__phone {
-    margin: 5px 0 0 250px;
+    box-sizing: border-box;
+    width: 175px;
+    height: 40px;
+    font-size: 18px;
+    padding: 15px 0 0 30px;
+
+    &:hover {
+      color: #8c83c1;
+    }
   }
 }
-*/
