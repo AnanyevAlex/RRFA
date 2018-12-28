@@ -37,10 +37,10 @@
 @media (min-width: @tablet-width) {
   .rules {
     padding: 40px 0 0 0;
+  }
 
-    &:nth-child(6) {
-       margin: 0;
-    }
+  .rules__input-slide + .rules__btn-slide:nth-child(6){
+    margin: 0;
   }
 
   .rules__bg-box {
@@ -107,4 +107,16 @@
   .rules__input-slide--coursework:checked ~ .rules__bg-box .rules__item--coursework {
     display: block;
   }
+}
+
+@media (min-width: @desktop-width) {
+  .rules {
+    padding: 40px 0 0 0;
+  }
+
+  .rules__item-title {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+  }
+
 }
